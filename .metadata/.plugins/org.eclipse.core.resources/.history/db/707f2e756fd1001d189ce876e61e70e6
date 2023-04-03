@@ -1,0 +1,14 @@
+package com.wissen.appointmentservice.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.wissen.appointmentservice.model.Appointment;
+import com.wissen.doctorservice.models.Doctor;
+
+public interface AppointmentService {
+	public List<Appointment> fetchAllDocs();
+
+	public Appointment fetchDoc(String id); 
+}

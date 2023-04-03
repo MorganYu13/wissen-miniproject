@@ -1,0 +1,5 @@
+package com.wissen.doctorspatientconsolidateservice.model;
+
+public class AppointAggregate {
+
+}

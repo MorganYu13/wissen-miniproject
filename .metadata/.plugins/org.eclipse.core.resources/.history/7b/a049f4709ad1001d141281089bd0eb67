@@ -1,0 +1,20 @@
+package com.wissen.doctorspatientconsolidateservice.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+
+@Document(collection = "app_doc_pat_aggregate")
+public class AppointmentFull {
+	
+	@Field("app_id")
+	private String id; 
+	
+	private String date_of_consultation;
+	private String date_of_billing; 
+	private String consulation_fee;
+	private Boolean is_new_reg; 
+	private Boolean is_online;
+
+}

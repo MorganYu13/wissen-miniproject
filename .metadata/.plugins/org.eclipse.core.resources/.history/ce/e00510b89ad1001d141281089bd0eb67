@@ -1,0 +1,21 @@
+package com.wissen.doctorspatientconsolidateservice.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+
+@Document(collection = "app_doc_pat_aggregate")
+public class AppointmentFull {
+	
+	@Field("app_id")
+	private String id; 
+	
+	private String doc_id; 
+	private String p_id; 
+	
+	private Doctor doctor; 
+	private Appointment appointment; 
+	private Patient patient;
+
+}

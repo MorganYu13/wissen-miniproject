@@ -1,0 +1,29 @@
+package com.wissen.doctorspatientconsolidateservice.dao.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.stereotype.Repository;
+
+import com.wissen.doctorspatientconsolidateservice.dao.AppointmentFullDao;
+import com.wissen.doctorspatientconsolidateservice.model.AppointmentFull;
+
+
+
+@Repository
+public class AppointmentFullDaoImpl implements AppointmentFullDao {
+	
+	@Autowired
+	MongoOperations mongoOps;
+	
+	@Override
+	public List<AppointmentFullDao> fetchAllAppointmentFull() {
+		return mongoOps.findAll(AppointmentFull.class, "appointments"); 
+	}
+	
+	@Override 
+	public AppointmentFullDao fetchAppointmentFull(String id) {
+		return mongoOps.findById(id, AppointmentFull.class); 
+	}
+}

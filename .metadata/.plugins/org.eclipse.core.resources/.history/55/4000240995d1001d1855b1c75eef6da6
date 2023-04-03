@@ -1,0 +1,32 @@
+package com.wissen.doctorspatientconsolidateservice.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.wissen.doctorspatientconsolidateservice.dao.AppointmentDao;
+import com.wissen.doctorspatientconsolidateservice.dao.AppointmentFullDao;
+import com.wissen.doctorspatientconsolidateservice.model.Appointment;
+import com.wissen.doctorspatientconsolidateservice.model.AppointmentFull;
+import com.wissen.doctorspatientconsolidateservice.service.AppointmentFullService;
+import com.wissen.doctorspatientconsolidateservice.service.AppointmentService;
+
+@Service
+public class AppointmentFullServiceImpl implements AppointmentFullService {
+
+	@Autowired
+	private AppointmentFullDao appointmentFullDao; 
+	
+	
+	@Override
+	public List<AppointmentFull> fetchAllAppointment() {
+		return appointmentFullDao.findAllAppointment(); 
+	}
+	
+	@Override
+	public AppointmentFull fetchAppointment(String id) {
+		return appointmentFullDao.fetchAppointment(id); 
+	}
+
+}

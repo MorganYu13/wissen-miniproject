@@ -1,0 +1,18 @@
+package com.wissen.appointmentservice.model;
+
+import com.wissen.doctorservice.models.Doctor;
+import com.wissen.patientservice.models.Patient;
+
+public class AppointmentFullDetails {
+
+	private Doctor doctor; 
+	private Patient patient; 
+	private Appointment appointment; 
+	
+	public AppointmentFullDetails(Doctor doctor, Patient patient, Appointment appointment) {
+		this.doctor = doctor; 
+		this.patient = patient; 
+		this.appointment = appointment; 
+	}
+	
+}

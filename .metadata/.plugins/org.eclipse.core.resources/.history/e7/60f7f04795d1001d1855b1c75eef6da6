@@ -1,0 +1,13 @@
+package com.wissen.doctorspatientconsolidateservice.dao;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.wissen.doctorspatientconsolidateservice.model.Appointment;
+
+public interface AppointmentFullDao {
+	public List<AppointmentFull> fetchAllAppointmentFull();
+
+	public AppointmentFull fetchAppointmentFull(String id); 
+}

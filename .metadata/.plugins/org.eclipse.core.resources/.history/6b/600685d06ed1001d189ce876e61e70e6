@@ -1,0 +1,8 @@
+package com.wissen.appointmentservice.model;
+
+public class Snippet {
+	public static void main(String[] args) {
+		appointmentDao
+	}
+}
+

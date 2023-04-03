@@ -1,0 +1,19 @@
+package com.wissen.appointmentservice.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document(collection = "appointments")
+public class Appointment {
+	
+	@Field("app_id")
+	private String id; 
+	
+	private String doc_id; 
+	private String p_id; 
+	private String date_of_consultation;
+	private String date_of_billing; 
+	private String consulation_fee;
+	private boolean is_new_visitor; 
+}

@@ -1,0 +1,29 @@
+package com.wissen.appointmentservice.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.wissen.doctorservice.dao.DoctorDao;
+import com.wissen.doctorservice.models.Doctor;
+import com.wissen.doctorservice.service.DoctorService;
+
+@Service
+public class AppointmentServiceImpl implements AppointmentService {
+
+	@Autowired
+	private AppointmentDao appointmentDao; 
+	
+	
+	@Override
+	public List<Appointment> fetchAllDocs() {
+		return appointmentDao.findAllDocs(); 
+	}
+	
+	@Override
+	public Appointment fetchDoc(String id) {
+		return appointmentDao.fetchDoc(id); 
+	}
+
+}

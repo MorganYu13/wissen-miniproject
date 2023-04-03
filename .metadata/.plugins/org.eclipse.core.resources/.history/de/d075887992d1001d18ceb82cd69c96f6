@@ -1,0 +1,13 @@
+package com.wissen.doctorspatientsconsolidateservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DoctorsPatientsConsolidateServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DoctorsPatientsConsolidateServiceApplication.class, args);
+	}
+
+}

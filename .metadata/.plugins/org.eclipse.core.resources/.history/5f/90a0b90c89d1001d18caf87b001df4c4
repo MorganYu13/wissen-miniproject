@@ -1,0 +1,5 @@
+package com.wissen.appointmentservice.model;
+
+public class AppointmentFullDetails {
+
+}

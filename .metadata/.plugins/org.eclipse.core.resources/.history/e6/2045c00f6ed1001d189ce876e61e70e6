@@ -1,0 +1,28 @@
+package com.wissen.appointmentservice.dao.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.stereotype.Repository;
+
+import com.wissen.doctorservice.dao.DoctorDao;
+import com.wissen.doctorservice.models.Doctor;
+
+
+@Repository
+public class AppointmentDaoImpl implements AppointmentDao {
+	
+	@Autowired
+	MongoOperations mongoOps;
+	
+	@Override
+	public List<Appointment> findAllAppointment() {
+		return mongoOps.findAll(Appointment.class, "doctors"); 
+	}
+	
+	@Override 
+	public Appointment fetchDoc(String id) {
+		return mongoOps.findById(id, Appointment.class); 
+	}
+}

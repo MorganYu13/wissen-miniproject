@@ -1,0 +1,39 @@
+package com.wissen.doctorspatientconsolidateservice.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.wissen.doctorspatientconsolidateservice.model.AppointmentAggregate;
+import com.wissen.doctorspatientconsolidateservice.model.AppointmentFull;
+import com.wissen.doctorspatientconsolidateservice.service.AppointmentAggService;
+
+@RestController
+@RequestMapping("/appointment-full")
+public class AppointmentAggController { 
+	
+	@Autowired
+	private AppointmentAggService appointmentAggService; 
+	
+
+	@GetMapping("/hello/{name}")
+	public String sayHello(@PathVariable String name) {
+		return "hello " + name; 
+	}
+	
+	@GetMapping("/getAppAgg")
+	public List<AppointmentAggregate> getDocs() {
+		return appointmentAggService.fetchAllAppointmentFull(); 
+	}
+	
+	@GetMapping("/getApp/{id}")
+	public AppointmentAggregate getDoc(@PathVariable String id) {
+		return appointmentAggService.fetchAppointmentFull(id); 
+	}
+}

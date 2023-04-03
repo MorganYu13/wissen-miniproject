@@ -1,0 +1,8 @@
+package com.wissen.doctorspatientconsolidateservice.model;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "app_doc_pat_aggregate")
+public class AppointAggregate {
+
+}

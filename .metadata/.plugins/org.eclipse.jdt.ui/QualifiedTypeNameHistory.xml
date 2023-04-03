@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.wissen.appointmentservice.dao.AppointmentDao"/>
+    <fullyQualifiedTypeName name="com.wissen.appointmentservice.service.AppointmentService"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorspatientconsolidateservice.dao.AppointmentFullDao"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorspatientconsolidateservice.model.AppointmentFull"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorspatientconsolidateservice.service.AppointmentFullService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorspatientconsolidateservice.model.AppointmentAggregate"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorspatientconsolidateservice.service.AppointmentAggService"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorspatientconsolidateservice.dao.AppointmentAggDao"/>
+    <fullyQualifiedTypeName name="com.wissen.doctorservice.models.Doctor"/>
+    <fullyQualifiedTypeName name="com.wissen.patientservice.models.Patient"/>
+    <fullyQualifiedTypeName name="com.wissen.appointmentservice.model.Appointment"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="org.springframework.cloud.client.loadbalancer.LoadBalanced"/>
+</qualifiedTypeNameHistroy>
